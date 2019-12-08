@@ -522,12 +522,14 @@ h1{
 .computer_bg{
     background-image: url(../img/computer.png);
     background-repeat: no-repeat;
+    background-size: contain;
     position: absolute;
     display: block;
-    width: 931px;
-    height: 760px;
+    width: 50%;
+    max-width: 931px;
+    height:100%;
     left: 0;
-    top: 117px;
+    top: 12%;
     z-index: 0;
 }
 
@@ -1335,6 +1337,10 @@ h1{
 
 /* --------------------------MEDIA----------------------------- */
 
+
+@media screen and (max-width:1800px){
+   
+}
 
 @media screen and (max-width:1600px){
     .statistic-bg{
