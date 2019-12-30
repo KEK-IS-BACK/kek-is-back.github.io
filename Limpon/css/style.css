@@ -247,6 +247,12 @@ h1{
     top: 19%;
 }
 
+/* ----------------advard-------------- */
+
+.advard{
+    margin: 0 auto;
+}
+
 /* ------------------------ page company ---------------------------- */
 .page-company{
     background-image: url(../img/blue_bg.png);
