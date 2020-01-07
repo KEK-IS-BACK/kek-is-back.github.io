@@ -25,7 +25,8 @@
     <link rel="apple-touch-icon" sizes="167x167" href="../img/favicons/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="../img/favicons/apple-touch-icon-1024x1024.png">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Slab&display=swap"
+    <script src="https://kit.fontawesome.com/fb003d9f8f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Slab:100,400,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../styles/main.css">
 </head>
@@ -50,7 +51,10 @@
         </header>
         <div class="wrap">
             <div class="block-book">
-                <div class="block-book__img"></div>
+                <div class="block-book-img">
+                    <h3 class="block-book-img__title">Good book<span>Don’t judge a book by its cover</span></h3>
+                    <p class="block-book-img__author">- By Emma Anderson</p>
+                </div>
                 <div class="block-text">
                     <p class="block-text__name">- By Emma Anderson</p>
                     <h1 class="block-text__title">BUKEE: THE BOOK<span>A room without books is like a body without a
@@ -86,45 +90,50 @@
                         esse
                         cillum dolore eu fugiat nulla
                         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium doloremque.</p>
+                        mollit anim id est laborum. Sed ut </p>
                     <a href="" class="block-text__btn">Read full biography </a>
                 </div>
-                <div class="block-author__img"></div>
+                <div class="block-author__img">
+                    <img src="../img/portrait_1.jpg" alt="">
+                </div>
             </div>
             <div class="block-counter">
                 <p class="block-counter__item">12<span>Total published books</span></p>
-                <p class="block-counter__item">5<span>Happy readers</span></p>
+                <p class="block-counter__item">5<span>Best selling books</span></p>
                 <p class="block-counter__item">15.000<span>Happy peoples</span></p>
             </div>
         </div>
     </div>
     <div class="page page_gray">
         <div class="wrap">
-            <h2 class="page__title">Book Contents</h2>
-            <p class="page__subtitle">A room without books is like a body without a soul</p>
+            <h1 class="page-title">Book Contents</h1>
+            <p class="page-subtitle">Let’s see what we have covered in the book</p>
             <div class="block-about">
-                <div>
-                    <h3>About the book</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                <div class="block-about-text">
+                    <h3 class="block-about-text__title">About the book</h3>
+                    <p class="block-about-text__description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut
                         labore
                         et dolore magna ali qua. Ut enim ad minim veniam, quis nostrud exercitation ull amco laboris
                         nisi ut
                         aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
                         esse
                         cillu m dolore eu fugiat nulla pariatur.</p>
-                    <div>
+                    <div class="block-about-text__social">
                         <p>Featured in:</p>
-                        <ul>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
+                        <ul class="block-about-text__social-list">
+                            <li class="block-about-text__social-list-1"><a href=""><i
+                                        class="fab fa-stack-overflow"></i></a></li>
+                            <li class="block-about-text__social-list-2"><a href=""><i class="fab fa-amazon"></i></a>
+                            </li>
+                            <li class="block-about-text__social-list-3"><a href=""><i class="fab fa-sass"></i></a></li>
+                            <li class=""><a href=""></a></li>
                         </ul>
                     </div>
                 </div>
-                <div>
+                <div class="block-about-table">
                     <h3>Table of contents</h3>
-                    <ol>
+                    <ol class="block-about-table__list">
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipisicing elit</li>
                         <li>Labore et dolore magna</li>
@@ -138,6 +147,59 @@
                     </ol>
                     <button href="">More</button>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="wrap">
+            <div class="page-books">
+                <h1 class="page-title">Other Books</h1>
+                <p class="page-subtitle">Some books you might be interested in</p>
+                <div class="block-books">
+                    <div class="block-books-item">
+                        <div class="block-books-item-img">
+                            <h3 class="block-books-item-img__title">Inception
+                                <span>Books are the best friends</span>
+                            </h3>
+                            <p class="block-books-item-img__author">- By Emma Anderson</p>
+                        </div>
+                        <div class="block-books-item-text">
+                            <h2 class="block-books-item-text__title">Inception</h2>
+                            <p class="block-books-item-text__description">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                            <a href="" class="block-books-item-text__read-more">Read more</a>
+                        </div>
+                    </div>
+                    <div class="block-books-item">
+                        <div class="block-books-item-img">
+                            <h3 class="block-books-item-img__title">Fight Club
+                                <span>Books are the best friends</span>
+                            </h3>
+                            <p class="block-books-item-img__author">- By Emma Anderson</p>
+                        </div>
+                        <div class="block-books-item-text">
+                            <h2 class="block-books-item-text__title">Fight Club</h2>
+                            <p class="block-books-item-text__description">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                            <a href="" class="block-books-item-text__read-more">Read more</a>
+                        </div>
+                    </div>
+                    <div class="block-books-item ">
+                        <div class="block-books-item-img">
+                            <h3 class="block-books-item-img__title">Daredevils
+                                <span>Books are the best friends</span>
+                            </h3>
+                            <p class="block-books-item-img__author">- By Emma Anderson</p>
+                        </div>
+                        <div class="block-books-item-text">
+                            <h2 class="block-books-item-text__title">Daredevils</h2>
+                            <p class="block-books-item-text__description">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                            <a href="" class="block-books-item-text__read-more">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="page-books__btn">Browse all books</button>
             </div>
         </div>
     </div>
