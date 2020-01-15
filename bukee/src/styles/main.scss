@@ -45,8 +45,71 @@ h3{
     letter-spacing: 1.2px;
 }
 
-.page_gray{
+.page__gray{
     background-color: $gray-bg;
+}
+
+
+.block-text{
+    line-height: 44px;
+    flex-basis: 670px;
+    &__name{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0.9px;
+        padding-bottom: 23px;
+        margin-top: -10px;
+    }
+    &__title{
+        color: $wight-color;
+        margin-left: -3px;
+        padding-bottom: 28px;
+        font-weight: 700;
+        font-size: 48px;
+        letter-spacing: 2.1px;
+        & span{
+            display: block;
+            padding-top: 4px;
+            padding-left: 2px;
+            color: $green-color;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 0.9px;
+        }
+    }
+    &__description{
+        margin-left: -2px;
+        padding-bottom: 24px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.75px;
+        width: 87%;
+    }
+    &__btn{
+        display: block;
+        border-radius: 3px;
+        background: linear-gradient(to top left, #65e4ce, #65e4a1);
+        text-decoration: none;
+        color: $wight-color;
+        font-size: 18px;
+        letter-spacing: 0.72px;
+        margin-top: 23px;
+        margin-bottom: 19px;
+        padding: 2px 25px;
+        width: 200px;
+        text-align: center;
+        box-shadow: 0 -2px #adedbb inset;
+    }
+    &__small{
+        font-size: 12px;
+        font-style: italic;
+        display: block;
+        line-height: 22px;
+        margin-left: -2px;
+    }
 }
 // --------------------------------------------//
 .page-main{
@@ -54,6 +117,7 @@ h3{
     background-repeat: no-repeat;
     background-size: cover;
     color: $wight-color;
+    position: relative;
     .header{
         max-width: 1170px;
         margin: 0 auto;
@@ -134,67 +198,10 @@ h3{
                 font-size: 14px;
             }
         }
-    }
-}
-
-.block-text{
-    line-height: 44px;
-    flex-basis: 670px;
-    &__name{
-        font-family: 'Open Sans', sans-serif;
-        font-size: 18px;
-        font-weight: 400;
-        letter-spacing: 0.9px;
-        padding-bottom: 23px;
-        margin-top: -10px;
-    }
-    &__title{
-        color: $wight-color;
-        margin-left: -3px;
-        padding-bottom: 28px;
-        font-weight: 700;
-        font-size: 48px;
-        letter-spacing: 2.1px;
-        & span{
-            display: block;
-            padding-top: 4px;
-            padding-left: 2px;
-            color: $green-color;
-            font-size: 18px;
-            font-weight: 400;
-            letter-spacing: 0.9px;
+        .block-text__btn{
+            background: #65e4a2;
         }
-    }
-    &__description{
-        margin-left: -2px;
-        padding-bottom: 24px;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 24px;
-        letter-spacing: 0.75px;
-        width: 87%;
-    }
-    &__btn{
-        display: block;
-        border-radius: 5px;
-        background-color: $green-color;
-        text-decoration: none;
-        color: $wight-color;
-        font-size: 18px;
-        letter-spacing: 0.72px;
-        margin-top: 23px;
-        margin-bottom: 19px;
-        padding: 2px 25px;
-        width: 200px;
-        text-align: center;
-    }
-    &__small{
-        font-size: 12px;
-        font-style: italic;
-        display: block;
-        line-height: 22px;
-        margin-left: -2px;
+
     }
 }
 
@@ -215,6 +222,7 @@ h3{
         }
         &__btn{
             padding: 2px 18px;
+            box-shadow: 0 -2px #adedbb inset;
         }
     } 
     &__img{
@@ -352,7 +360,7 @@ h3{
         & button{
             display: flex;
             align-items: center;
-            background-color: $green-color;
+            background: linear-gradient(to top left, #65e4ce, #65e4a1);
             font-size: 18px;
             letter-spacing: 0.72px;
             color: $wight-color;
@@ -361,6 +369,7 @@ h3{
             padding: 15px 45px;
             text-align: center;
             margin-top: 27px;
+            box-shadow: 0 -2px #adedbb inset;
             &:hover{
                 cursor: pointer;
             }
@@ -455,7 +464,7 @@ h3{
         }
     } 
     &__btn{
-        background-color: $green-color;
+        background: linear-gradient(to top left, #65e4ce, #65e4a1);
         color: $white-bg;
         font-size: 18px;
         border: none;
@@ -463,12 +472,191 @@ h3{
         margin-top: 90px;
         margin-bottom: 150px;
         border-radius: 3px;
+        position: relative;
+        box-shadow: 0 -2px #adedbb inset;
         &:focus{
             outline: none;
         }
         &:hover{
             cursor: pointer;
         }
-
     } 
+}
+
+.page-events{
+    display: flex;
+    justify-content: space-between;
+    .block-shower__img{
+        background-image: url(../img/portrait_2_bg.svg);
+        background-repeat: no-repeat;
+        width: 435px;
+        height: 704px;
+        position: relative;
+        &>img{
+            position: absolute;
+            left: 51px;
+            top: 49px;
+        }
+    }
+    .block-text{
+        flex-basis: 49%;
+        line-height: 24px;
+        font-family: 'Open Sans', sans-serif;
+        &__name{
+            font-size: 18px;
+            line-height: 44px;
+            letter-spacing: 0.9px;
+            color: #696980;
+            padding-bottom: 14px;
+        }
+        &__title{    
+            font-family: 'Roboto Slab', serif;
+            color: #44444f;
+            letter-spacing: 1.8px;
+            padding-bottom: 31px;
+            & span{
+                font-weight: 400;
+                letter-spacing: 1px;
+            }
+        }
+        &-item{
+            margin-bottom: 55px;
+            &__date{
+                color: #696980;
+                letter-spacing: 0.75px;
+                display: inline-block;
+                margin-left: -3px;
+                margin-bottom: 4px;
+
+            }
+            &__place{                
+                font-family: 'Roboto Slab', serif;
+                font-weight: 700;
+                font-size: 18px;
+                color: #44444f;
+                margin-left: -1px;
+                margin-bottom: 17px;
+            }
+            &__description{
+                margin-left: -2px;
+                margin-bottom: -3px;
+            }
+            &__btn{
+                font-family: 'Roboto Slab', serif;
+                font-size: 18px;
+                display: inline-block;
+                text-decoration: none;
+                background: linear-gradient(#65e4ce, #65e4a1);
+                padding: 10px 27px 16px 34px ;
+                color: $wight-color;
+                border-radius: 3px;
+                box-shadow: 0 -2px #b2f1be inset;
+                margin-top: 29px;
+                margin-left: -2px;
+            }
+        }
+    }
+}
+.page .wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+
+    .block-blog{
+        display: flex;
+        justify-content: space-between;
+        &-item{
+            margin: 0 15px;
+        }
+        & + .page__btn{
+            margin: 82px auto 150px;
+            text-decoration: none;
+            background: linear-gradient(to top left, #65e4ce, #65e4a1);
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            padding: 16px 31px 14px 34px;
+            border-radius: 3px;
+            box-shadow: 0 -2px #adedbb inset;
+        }
+        &-img{
+            margin-bottom: 10px;
+        }
+        &-item h4{
+            font-size: 18px;
+            color: #44444f;
+            letter-spacing: 0.9px;
+        }
+        &-info{
+            font-size: 15px;
+            margin-bottom: 11px;
+            line-height: 30px;
+            & p{
+                display: inline;
+            }
+            &>a{
+                text-decoration: none;
+                color: #65e496;
+                & span{
+                    color: #80809b;
+                }
+            }
+        }
+        &__desc{
+            font-family: 'Open sans', sans-serif;
+            font-size: 15px;
+            color: #696980;
+            letter-spacing: 0.75px;
+        }
+    }
+}
+
+.block-letter{
+    padding-top: 162px;
+    display: flex;
+    justify-content: space-between;
+    &-item{
+        flex-basis: 49%;
+    }
+    &__text{
+        font-family: 'Open Sans', sans-serif;
+        color: #696980;
+    }
+
+    &__title{
+        margin-bottom: 13px;
+    }
+    &__input{
+        color: #9191b5;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #44444f;
+        border: none;
+        border-radius: 3px;
+        padding: 15px 0 15px 26px;
+        letter-spacing: 0.75px;
+        &:focus{
+            outline: none;
+        }
+    }
+    &__btn{
+        background: linear-gradient(to top left, #65e4ce, #65e4a1);
+        color: $white-bg;
+        font-size: 18px;
+        border: none;
+        padding: 16px 0;
+        margin-top: 20px;
+        margin-bottom: 150px;
+        border-radius: 3px;
+        position: relative;
+        box-shadow: 0 -2px #adedbb inset;
+        display: block;
+        width: 100%;
+        &:focus{
+            outline: none;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
 }
