@@ -557,7 +557,9 @@ h3{
         }
     }
 }
-.page .wrap{
+
+
+.page-blog .wrap{
     display: flex;
     flex-direction: column;
     align-items: center;  
@@ -657,6 +659,130 @@ h3{
         }
         &:hover{
             cursor: pointer;
+        }
+    }
+}
+
+.page-footer{
+    background-color: #44444f;
+    color: #9191b5;
+    padding: 80px 0;
+}
+
+
+
+.block-footer{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    &>div{
+        flex-basis: 31.5%;
+    }
+    &-item2,&-item3{
+        box-sizing: border-box;
+        padding-left: 99px;
+    }
+    &__logo{
+        display: block;
+        background-image: url(../img/logo.svg);
+        background-repeat: no-repeat;
+        width: 137px;
+        height: 28px;
+        margin-bottom: 26px;
+    }
+    &__title{
+        font-size: 18px;
+        color: $green-color;
+        text-transform: uppercase;
+        margin: 10px 0 20px;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 700;
+        letter-spacing: 0.72px;
+    }
+    &__text{
+        letter-spacing: 0.6px;
+        margin-bottom: 24px;
+    }
+    &__list{
+        list-style-type: none;
+        padding-left: 0px;
+        &>li>a{
+            text-decoration: none;
+            color: #9191b5;
+            &:visited{
+                color: #9191b5;
+            }
+            &:hover{
+                color: $white-bg;
+            }
+        }
+    }
+    &__list-info{
+        line-height: 27px;
+
+    }
+    &__police{
+        letter-spacing: 0.6px;
+    }
+    &__social{
+        margin-top: 10px;
+        display: flex;
+        list-style-type: none;
+        padding-left: 0px;
+        &>li{
+            margin-right: 12px;
+            &>a{
+                color: $green-color;
+            }
+        }
+    }
+
+}
+
+
+.carousel{
+    text-align: center;
+    &-ava{
+        display: block;
+        width: 152px;
+        height: 152px;
+        margin: 0 auto 10px;
+        position: relative;
+    }
+    &-thumb{
+        &>img{
+            border-radius: 100%;
+
+        }
+    }
+    i{
+        position: absolute;
+        top: -6px;
+        right: -17px;
+        color: $green-color;
+        font-size: 50px;
+    }
+    &__expert{
+        color: $green-color;
+    }
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        li{
+            padding-left: 0;
+            list-style-type: none;
+            margin: 0 5px;
+            button{
+                background-color: $green-color;
+                border: none;
+                border-radius: 100%;
+                &:focus{
+                    outline: none;
+                }
+                &:hover{
+                    cursor: pointer;
+                }
+            }
         }
     }
 }

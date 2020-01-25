@@ -28,7 +28,9 @@
     <script src="https://kit.fontawesome.com/fb003d9f8f.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Slab:100,400,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="../styles/main.css">
+
 </head>
 
 <body>
@@ -205,6 +207,51 @@
     </div>
     <div class="page">
         <div class="wrap">
+            <div class="carousel">
+                <div>
+                    <div class="carousel-ava">
+                        <div class="carousel-thumb">
+                            <img src="../img/expert.png" alt="">
+                        </div>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <h2 class="carousel__expert">Kate Dennings</h2>
+                    <p>Calligraphy Expert</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                        maecenas accumsan lacus vel facilisis.</p>
+                </div>
+                <div>
+                    <div class="carousel-ava">
+                        <div class="carousel-thumb">
+                            <img src="../img/expert.png" alt="">
+                        </div>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <h2 class="carousel__expert">Kate Dennings</h2>
+                    <p>Calligraphy Expert</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                        maecenas accumsan lacus vel facilisis.</p>
+                </div>
+                <div>
+                    <div class="carousel-ava">
+                        <div class="carousel-thumb">
+                            <img src="../img/expert.png" alt="">
+                        </div>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <h2 class="carousel__expert">Kate Dennings</h2>
+                    <p>Calligraphy Expert</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                        maecenas accumsan lacus vel facilisis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="wrap">
             <div class="page-events">
                 <div class="block-shower__img">
                     <img src="../img/portrait_2.jpg" alt="">
@@ -240,7 +287,7 @@
             </div>
         </div>
     </div>
-    <div class="page page__gray">
+    <div class="page-blog page__gray">
         <div class="wrap">
             <h1 class="page-title">Latest from Blog</h1>
             <p class="page-subtitle">Some of the latest posts from my personal blog</p>
@@ -295,8 +342,59 @@
             </div>
         </div>
     </div>
-<script src="../js/main.js"></script>
-<script src="../js/vendor.js"></script>
+    <div class="page-footer">
+        <div class="wrap">
+            <div class="block-footer">
+                <div class="block-footer-item1">
+                    <a class="block-footer__logo"></a>
+                    <p class="block-footer__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                    <p class="block-footer__police">© 2018 Bukee Private Limited.</p>
+                </div>
+                <div class="block-footer-item2">
+                    <h2 class="block-footer__title">Useful Links</h2>
+                    <ul class="block-footer__list block-footer__list-info">
+                        <li><a href="">About Bukee</a></li>
+                        <li><a href="">Explore Our Ecosystem</a></li>
+                        <li><a href="">Monthly Community Meetup</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="block-footer-item3">
+                    <h2 class="block-footer__title">Our Contacts</h2>
+                    <ul class="block-footer__list">
+                        <li><a href="">Amphitheatre Parkway, CA, 94043</a></li>
+                        <li><a href="tel: +4455663322">Call us on: +4455663322</a></li>
+                        <li><a href="mailto: support@bukee.mail">Email: support@bukee.mail</a></li>
+
+                    </ul>
+                    <ul class="block-footer__social">
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitch"></i></a></li>
+                        <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                        <li><a href=""><i class="fab fa-slack-hash"></i></a></li>
+                        <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.carousel').slick({
+                arrows: false,
+                dots: true,
+            });
+        });
+    </script>
+
 </body>
 
 </html>
