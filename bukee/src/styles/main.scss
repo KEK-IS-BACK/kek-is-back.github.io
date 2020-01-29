@@ -742,18 +742,16 @@ h3{
 
 .carousel{
     text-align: center;
+    padding-top: 50px;
     &-ava{
         display: block;
         width: 152px;
         height: 152px;
-        margin: 0 auto 10px;
+        margin: 0 auto 25px;
         position: relative;
     }
-    &-thumb{
-        &>img{
-            border-radius: 100%;
-
-        }
+    &-thumb>img{
+        border-radius: 100%;
     }
     i{
         position: absolute;
@@ -762,26 +760,61 @@ h3{
         color: $green-color;
         font-size: 50px;
     }
-    &__expert{
+    &__name{    
         color: $green-color;
+        font-size: 24px;
+        margin-bottom: 2px;
+    }
+    &__expert{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+        color: #9191b5;
+        line-height: 28px;
+        margin-bottom: 34px;
+    }
+    &__description{
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+        color: #9191b5;
+        max-width: 740px;
+        margin: 0 auto;
+        line-height: 28px;
+        margin-bottom: 50px;
     }
     .slick-dots{
         display: flex;
         justify-content: center;
         li{
-            padding-left: 0;
+            padding:0;
             list-style-type: none;
             margin: 0 5px;
+            width: 8px;
+            height: 8px;
             button{
+                width: 8px;
+                height: 8px;
                 background-color: $green-color;
+                overflow: hidden;
                 border: none;
                 border-radius: 100%;
+                color: $green-color;
+                padding: 4px 0;
+                transition: width 0.3s, border-radius 0.1s;
                 &:focus{
                     outline: none;
                 }
                 &:hover{
                     cursor: pointer;
                 }
+            }
+        }
+        li.slick-active{
+            width: 38px;
+            button{
+                width: 38px;
+                border-radius: 5px;
+                transition: width 0.3s ;
             }
         }
     }
