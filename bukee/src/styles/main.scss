@@ -23,6 +23,7 @@ body{
 .wrap{
     max-width: 1170px;
     margin: 0 auto;
+    padding:0 15px;
 }
 
 p,h1,h2,h3,h4,h5,h6{
@@ -121,17 +122,23 @@ h3{
     .header{
         max-width: 1170px;
         margin: 0 auto;
-        padding-top: 50px;
-        padding-bottom: 177px;
         font-family: 'Open Sans', sans-serif;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding:50px 15px 177px;
+        @media(max-width: 900px){
+            flex-direction: column;
+            padding-bottom: 15 0px;
+        }
         &__logo{
             background-image: url(../img/logo.svg);
             background-repeat: no-repeat;
             width: 137px;
             height: 28px;
+            @media(max-width: 900px){
+                padding-bottom: 30px;
+            }
         }
         &-list{
             list-style-type: none;
@@ -282,17 +289,36 @@ h3{
     justify-content: space-between;
     margin-top: 72px;
     padding-bottom: 255px;
+    @media(max-width: 1024px){
+        flex-direction: column;
+        align-items: center;
+    }
     &-text{
-        flex-basis: 41%;
+        flex-basis: calc(100% - 570px);
+        box-sizing: border-box;
+        padding-right: 25px;
+        @media(max-width: 1024px){
+            padding-right: 0;
+            text-align: center;
+
+        }
         &__title{
             margin-bottom: 20px;
         }
         &__description{
             font-family: 'Open Sans', sans-serif;
+            max-width: 480px;
+            @media(max-width: 1024px){
+                max-width: 100%;
+            }
         }
         &__social{
             display: flex;
             margin-top: 31px;
+            @media(max-width: 1024px){
+                margin: 31px auto 0;
+                display: inline-block;
+            }
             & p{
                 color: #44444f;
                 font-size: 18px;
@@ -317,9 +343,8 @@ h3{
     
     }
     &-table{
-        flex-basis: 55%;
+        flex-basis: 575px;
         box-sizing: border-box;
-        padding-left: 72px;
         & h3{
             padding-bottom: 10px;
         }
@@ -327,8 +352,8 @@ h3{
             font-family: 'Open Sans', sans-serif;
             padding: 0 0 0 35px;
             column-count: 2;
-            column-gap: 63px;
             counter-reset: list;
+            column-gap: 63px;
             &>li{
                 list-style-type: none;
                 padding: 0;
@@ -486,6 +511,13 @@ h3{
 .page-events{
     display: flex;
     justify-content: space-between;
+    margin-top: 380px;
+    @media(max-width: 1600px){
+        margin-top: 300px;
+    }
+    @media(max-width: 1250px){
+        margin-top: 200px;
+    }
     .block-shower__img{
         background-image: url(../img/portrait_2_bg.svg);
         background-repeat: no-repeat;
@@ -563,7 +595,6 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;  
-
     .block-blog{
         display: flex;
         justify-content: space-between;
@@ -583,6 +614,9 @@ h3{
         }
         &-img{
             margin-bottom: 10px;
+            &>img{
+                width: 100%;
+            }
         }
         &-item h4{
             font-size: 18px;
@@ -739,82 +773,106 @@ h3{
 
 }
 
-
-.carousel{
-    text-align: center;
-    padding-top: 50px;
-    &-ava{
-        display: block;
-        width: 152px;
-        height: 152px;
-        margin: 0 auto 25px;
-        position: relative;
+.page-carousel{
+    position: relative;
+    @media(max-width: 1250px){
+        background-color:#44444f;
     }
-    &-thumb>img{
-        border-radius: 100%;
-    }
-    i{
+    .carousel-bg{
+        z-index: -1;
         position: absolute;
-        top: -6px;
-        right: -17px;
-        color: $green-color;
-        font-size: 50px;
+        top: 0;
+        width: 100%;
+        @media(max-width: 1250px){
+            display: none;
+        }
     }
-    &__name{    
-        color: $green-color;
-        font-size: 24px;
-        margin-bottom: 2px;
-    }
-    &__expert{
-        font-family: 'Open Sans', sans-serif;
-        font-size: 15px;
-        color: #9191b5;
-        line-height: 28px;
-        margin-bottom: 34px;
-    }
-    &__description{
+    .carousel{
+        padding-top: 225px;
         text-align: center;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 15px;
-        color: #9191b5;
-        max-width: 740px;
-        margin: 0 auto;
-        line-height: 28px;
-        margin-bottom: 50px;
-    }
-    .slick-dots{
-        display: flex;
-        justify-content: center;
-        li{
-            padding:0;
-            list-style-type: none;
-            margin: 0 5px;
-            width: 8px;
-            height: 8px;
-            button{
+        @media(max-width: 1600px){
+            padding-top: 160px;
+        }
+        @media(max-width: 1400px){
+            padding-top: 120px;
+        }
+        @media(max-width: 1250px){
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        &-ava{
+            display: block;
+            width: 152px;
+            height: 152px;
+            margin: 0 auto 25px;
+            position: relative;
+        }
+        &-thumb>img{
+            border-radius: 100%;
+        }
+        i{
+            position: absolute;
+            top: -6px;
+            right: -17px;
+            color: $green-color;
+            font-size: 50px;
+        }
+        &__name{    
+            color: $green-color;
+            font-size: 24px;
+            margin-bottom: 2px;
+        }
+        &__expert{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15px;
+            color: #9191b5;
+            line-height: 28px;
+            margin-bottom: 34px;
+        }
+        &__description{
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15px;
+            color: #9191b5;
+            max-width: 740px;
+            margin: 0 auto;
+            line-height: 28px;
+            margin-bottom: 50px;
+        }
+        .slick-dots{
+            display: flex;
+            justify-content: center;
+            li{
+                padding:0;
+                list-style-type: none;
+                margin: 0 5px;
                 width: 8px;
                 height: 8px;
-                background-color: $green-color;
-                overflow: hidden;
-                border: none;
-                border-radius: 100%;
-                color: $green-color;
-                padding: 4px 0;
-                transition: width 0.3s, border-radius 0.1s;
-                &:focus{
-                    outline: none;
-                }
-                &:hover{
-                    cursor: pointer;
+                button{
+                    width: 8px;
+                    height: 8px;
+                    background-color: $green-color;
+                    overflow: hidden;
+                    border: none;
+                    border-radius: 100%;
+                    color: $green-color;
+                    padding: 4px 0;
+                    transition: width 0.3s, border-radius 0.1s;
+                    &:focus{
+                        outline: none;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
             }
-        }
-        li.slick-active{
-            width: 38px;
-            button{
+            li.slick-active{
                 width: 38px;
-                border-radius: 5px;
-                transition: width 0.3s ;
+                button{
+                    width: 38px;
+                    border-radius: 5px;
+                    transition: width 0.3s ;
+                }
             }
         }
     }
