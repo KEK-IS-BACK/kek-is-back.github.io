@@ -53,7 +53,9 @@ h3{
 
 .block-text{
     line-height: 44px;
-    flex-basis: 670px;
+    flex-basis: calc(100% - 455px);
+    padding-left: 4%;
+    box-sizing: border-box;
     &__name{
         font-family: 'Open Sans', sans-serif;
         font-size: 18px;
@@ -92,6 +94,7 @@ h3{
     &__btn{
         display: block;
         border-radius: 3px;
+        background: -webkit-gradient(linear, right bottom, left top, from(#65e4ce), to(#65e4a1));
         background: linear-gradient(to top left, #65e4ce, #65e4a1);
         text-decoration: none;
         color: $wight-color;
@@ -123,12 +126,17 @@ h3{
         max-width: 1170px;
         margin: 0 auto;
         font-family: 'Open Sans', sans-serif;
+        display: -webkit-box;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        -webkit-box-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+                align-items: center;
         padding:50px 15px 177px;
         @media(max-width: 900px){
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                    flex-direction: column;
             padding-bottom: 15 0px;
         }
         &__logo{
@@ -142,12 +150,15 @@ h3{
         }
         &-list{
             list-style-type: none;
+            display: -webkit-box;
             display: flex;
-            justify-content: flex-end;
+            -webkit-box-pack: end;
+                    justify-content: flex-end;
             &__item{
                 margin-left: 20px;
                 padding-bottom: 5px;
                 border-bottom: 3px solid transparent;
+                -webkit-transition: 0.3s;
                 transition: 0.3s;
                 &.active{
                     border-bottom: 3px solid $green-color;
@@ -164,13 +175,15 @@ h3{
         }
     }
     .block-book{
+        display: -webkit-box;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+                justify-content: space-between;
         padding-bottom: 162px;
         &-img{
             background-image: url(../img/book.svg);
             background-repeat: no-repeat;
-            flex-basis: 500px;
+            flex-basis: 455px;
             height: 639px;
             position: relative;
             &__title{
@@ -213,19 +226,30 @@ h3{
 }
 
 .block-author{
+    display: -webkit-box;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
     padding-top: 160px;
     .block-text{
+        width: calc(100% - 435px);
+        @media(max-width: 1100px){
+            -webkit-box-pack: start;
+                    justify-content: flex-start;
+        }
         &__name{
             padding-top: 15px;
             padding-bottom: 13px;
             color: #696980;
-
         }
         &__title{
             letter-spacing: 1.92px;
             color: #44444f;
+        }
+        &__description{
+            @media(max-width: 1100px){
+                width: 100%;
+            } 
         }
         &__btn{
             padding: 2px 18px;
@@ -233,20 +257,30 @@ h3{
         }
     } 
     &__img{
-            background-image: url(../img/portrait_1_bg.svg);
-            background-repeat: no-repeat;
-            width: 435px;
-            height: 558px;
-            position: relative;
-                &>img{
-                position: absolute;
-                left: -48px;
-                top: 48px;
-                } 
+        background-image: url(../img/portrait_1_bg.svg);
+        background-repeat: no-repeat;
+        width: 435px;
+        height: 558px;
+        position: relative;
+        @media(max-width: 1100px){
+            width: 362px;
+            height: 464px;
+        }
+            &>img{
+            position: absolute;
+            left: -48px;
+            top: 48px;
+            @media(max-width: 1100px){
+                width: 350px;
+                height: 372px;
+                top: 43px;
+            }
         } 
+    } 
 }
 
 .block-counter{
+    display: -webkit-box;
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -285,13 +319,19 @@ h3{
 }
 
 .block-about{
+    display: -webkit-box;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
     margin-top: 72px;
     padding-bottom: 255px;
     @media(max-width: 1024px){
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-align: center;
+                align-items: center;
+        padding-bottom: 0;
     }
     &-text{
         flex-basis: calc(100% - 570px);
@@ -300,7 +340,6 @@ h3{
         @media(max-width: 1024px){
             padding-right: 0;
             text-align: center;
-
         }
         &__title{
             margin-bottom: 20px;
@@ -313,11 +352,16 @@ h3{
             }
         }
         &__social{
+            display: -webkit-box;
             display: flex;
             margin-top: 31px;
             @media(max-width: 1024px){
-                margin: 31px auto 0;
-                display: inline-block;
+                display: -webkit-box;
+                display: flex;
+                -webkit-box-pack: center;
+                        justify-content: center;
+                margin-top: 15px;
+                margin-bottom: 72px;
             }
             & p{
                 color: #44444f;
@@ -345,15 +389,26 @@ h3{
     &-table{
         flex-basis: 575px;
         box-sizing: border-box;
+        @media(max-width: 1024px){
+            flex-basis: unset;
+            padding-bottom: 100px;
+        }
         & h3{
             padding-bottom: 10px;
+            @media(max-width: 1024px){
+                text-align: center;
+            }
         }
         &__list{
             font-family: 'Open Sans', sans-serif;
             padding: 0 0 0 35px;
-            column-count: 2;
+            -webkit-column-count: 2;
+               -moz-column-count: 2;
+                    column-count: 2;
             counter-reset: list;
-            column-gap: 63px;
+            -webkit-column-gap: 63px;
+               -moz-column-gap: 63px;
+                    column-gap: 63px;
             &>li{
                 list-style-type: none;
                 padding: 0;
@@ -383,8 +438,11 @@ h3{
             }
         }
         & button{
+            display: -webkit-box;
             display: flex;
-            align-items: center;
+            -webkit-box-align: center;
+                    align-items: center;
+            background: -webkit-gradient(linear, right bottom, left top, from(#65e4ce), to(#65e4a1));
             background: linear-gradient(to top left, #65e4ce, #65e4a1);
             font-size: 18px;
             letter-spacing: 0.72px;
@@ -395,6 +453,14 @@ h3{
             text-align: center;
             margin-top: 27px;
             box-shadow: 0 -2px #adedbb inset;
+            @media(max-width: 1024px){
+                text-align: center;
+                display: -webkit-box;
+                display: flex;
+                -webkit-box-pack: center;
+                        justify-content: center;
+                margin: 25px auto ;
+            }
             &:hover{
                 cursor: pointer;
             }
@@ -406,21 +472,36 @@ h3{
 }
 
 .page-books{
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    .block-books{
-        display: flex;
-        justify-content: center;
-        &-item{
-            display: flex;
-            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
             flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+    .block-books{
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+                justify-content: center;
+        &-item{
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-align: center;
+                    align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                    flex-direction: column;
             &-img{
+                display: -webkit-box;
                 display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                        flex-direction: column;
+                -webkit-box-pack: justify;
+                        justify-content: space-between;
+                -webkit-box-align: center;
+                        align-items: center;
                 background-image: url(../img/other_books.svg);
                 background-repeat: no-repeat;
                 width: 270px;
@@ -457,9 +538,13 @@ h3{
                 }
             }
             &-text{
+                display: -webkit-box;
                 display: flex;
-                align-items: center;
-                flex-direction: column;
+                -webkit-box-align: center;
+                        align-items: center;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                        flex-direction: column;
                 text-align: center;
                 &__title{
                     letter-spacing: 1.3px;
@@ -489,6 +574,7 @@ h3{
         }
     } 
     &__btn{
+        background: -webkit-gradient(linear, right bottom, left top, from(#65e4ce), to(#65e4a1));
         background: linear-gradient(to top left, #65e4ce, #65e4a1);
         color: $white-bg;
         font-size: 18px;
@@ -509,8 +595,10 @@ h3{
 }
 
 .page-events{
+    display: -webkit-box;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
     margin-top: 380px;
     @media(max-width: 1600px){
         margin-top: 300px;
@@ -578,6 +666,7 @@ h3{
                 font-size: 18px;
                 display: inline-block;
                 text-decoration: none;
+                background: -webkit-gradient(linear, left top, left bottom, from(#65e4ce), to(#65e4a1));
                 background: linear-gradient(#65e4ce, #65e4a1);
                 padding: 10px 27px 16px 34px ;
                 color: $wight-color;
@@ -592,18 +681,25 @@ h3{
 
 
 .page-blog .wrap{
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    align-items: center;  
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;  
     .block-blog{
+        display: -webkit-box;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+                justify-content: space-between;
         &-item{
             margin: 0 15px;
         }
         & + .page__btn{
             margin: 82px auto 150px;
             text-decoration: none;
+            background: -webkit-gradient(linear, right bottom, left top, from(#65e4ce), to(#65e4a1));
             background: linear-gradient(to top left, #65e4ce, #65e4a1);
             color: #fff;
             font-size: 18px;
@@ -649,8 +745,10 @@ h3{
 
 .block-letter{
     padding-top: 162px;
+    display: -webkit-box;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
     &-item{
         flex-basis: 49%;
     }
@@ -676,6 +774,7 @@ h3{
         }
     }
     &__btn{
+        background: -webkit-gradient(linear, right bottom, left top, from(#65e4ce), to(#65e4a1));
         background: linear-gradient(to top left, #65e4ce, #65e4a1);
         color: $white-bg;
         font-size: 18px;
@@ -706,8 +805,10 @@ h3{
 
 
 .block-footer{
+    display: -webkit-box;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
     font-family: 'Open Sans', sans-serif;
     &>div{
         flex-basis: 31.5%;
@@ -760,6 +861,7 @@ h3{
     }
     &__social{
         margin-top: 10px;
+        display: -webkit-box;
         display: flex;
         list-style-type: none;
         padding-left: 0px;
@@ -840,8 +942,10 @@ h3{
             margin-bottom: 50px;
         }
         .slick-dots{
+            display: -webkit-box;
             display: flex;
-            justify-content: center;
+            -webkit-box-pack: center;
+                    justify-content: center;
             li{
                 padding:0;
                 list-style-type: none;
@@ -857,6 +961,7 @@ h3{
                     border-radius: 100%;
                     color: $green-color;
                     padding: 4px 0;
+                    -webkit-transition: width 0.3s, border-radius 0.1s;
                     transition: width 0.3s, border-radius 0.1s;
                     &:focus{
                         outline: none;
@@ -871,6 +976,7 @@ h3{
                 button{
                     width: 38px;
                     border-radius: 5px;
+                    -webkit-transition: width 0.3s ;
                     transition: width 0.3s ;
                 }
             }

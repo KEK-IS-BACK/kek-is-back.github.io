@@ -1,0 +1,10 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Artem",
+  "license": "MIT",
+  "dependencies": {
+    "gulp-scss": "^1.4.0"
+  }
+}
