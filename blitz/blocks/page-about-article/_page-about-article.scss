@@ -1,0 +1,36 @@
+.page-about-article {
+      max-width: 296px;
+            &__title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 20px;
+            color: #474747;
+            margin: 0 0 26px 0;
+            }
+
+            &__subtitle {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+            color: #9e9d9d;
+            margin: 0 0 27px 0;
+            }
+
+            &__description {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+            color: #474747;
+            margin: 0 0 58px 0;
+            }
+}
+
+.page-about-article_row{
+      display: flex;
+      justify-content: space-between;
+}
+
+.page-about-article_margin{
+      margin: 0 0 57px 0;
+}
+
+
+
+
