@@ -1,0 +1,69 @@
+.page-articles {
+	margin: 45px 0 70px;
+	.flex{
+		margin: 0 -22.5px;
+		flex-wrap: wrap;
+	}
+}
+
+.page-articles-block {
+	margin: 0 22.5px;
+	flex-basis: 33.333%;
+	max-width: 275px;
+	box-sizing: border-box;
+		&__title {
+			display: flex;
+			justify-content: space-between;
+			padding-right: 20px;
+			font-family: 'Bebas Neue', cursive;
+			font-size: 26px;
+			line-height: 24px;
+			color: #464646;
+			font-weight: 400;
+		}
+		&__img{
+			width: 46px;
+			height: 41px;
+			text-align: center;
+			margin-right: 32px;
+		}
+		&__text {
+			width: 275px;
+			font-family: 'Helvetica Neue', sans-serif;
+			font-size: 12px;
+			line-height: 18px;
+			text-align: left;
+			color: #414141;
+			font-weight: 500;
+		}
+		&__transition {
+			text-decoration: none;
+			font-family: 'Bebas Neue', cursive;
+			font-size: 16px;
+			line-height: 18px;
+			color: #474747;
+			position: relative;
+			transition: ease-in all 0.3s;
+			&:hover{
+				font-size: 18px	;
+			}
+			&::before{
+				content: "";
+				display: inline-block;
+				width: 17px;
+				height: 9px;
+				background-image: url(../img/svg/arrows.svg);
+				margin-right: 10px;
+				background-repeat: no-repeat;
+				transition: ease-in all 0.3s;
+			}
+			&:visited{
+				color: #474747;
+			}
+			&:hover:before{
+				margin-right: 0px;
+				margin-left: 5px;
+				padding-left: 5px;
+			}
+		}
+}
