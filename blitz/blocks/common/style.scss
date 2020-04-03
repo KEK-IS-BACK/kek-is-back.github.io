@@ -1,3 +1,7 @@
+body{
+    box-sizing: border-box;
+}
+
 @import 'fonts';
 @import 'general';
 @import '../border/border';
@@ -11,6 +15,8 @@
 @import '../page-about-person/page-about-person';
 @import '../page-projects-content/page-projects-content';
 @import '../sidebar-r/sidebar-r';
+@import '../blog-article/blog-article';
+@import '../form/form';
 
 
 

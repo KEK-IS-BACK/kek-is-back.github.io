@@ -3,9 +3,16 @@
     margin-top: 10px;
     margin-bottom: 40px;
     &__logo{
+        display: block;
         font-family: 'Pacifico', cursive;
         font-size: 42px;
         font-weight: 400;
+        text-decoration: none;
+        margin: .67em 0;
+        color: #474747;
+        &:visited{
+            color: #474747;
+        }
     }
     .container{
         align-items: flex-end;

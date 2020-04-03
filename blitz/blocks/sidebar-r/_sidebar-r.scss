@@ -1,37 +1,26 @@
-.page-project-r {
-    max-width: 220px;
-}
-    
 .sidebar-r {
     &__title {
         font-family: 'Bebas Neue', cursive;
         color: #464646;
-        font-size: 12px;
+        font-size: 16px;
         margin: 0 0 13px 0;
         padding: 0;
+        line-height: 13px;
     }
 }
 
 .sidebar-r-about-blitz {
     &__text {
         font-family: 'Helvetica Neue', sans-serif;
-        color: #464646;
+        color: #464646; 
         font-size: 12px;
-        margin: 0;
+        margin: 20px 0 33px 0;
         padding: 0;
     }
 }
 
-.sidebar-r-about-blitz_margin{
-    margin:
-
-}
-
-.sidebar-r-categories {
-}
-
 .sidebar-r-categories-list {
-    margin: 0;
+    margin: 20px 0 30px 0;
     padding: 0;
     &__item {
         font-family: 'Helvetica Neue', sans-serif;
@@ -41,10 +30,14 @@
         padding: 0;
         & a{
             text-decoration: none;
+            color: #464646;
             &:visited{
                 color: #464646;
             }
-
+            &:hover{
+                text-decoration: underline solid black;
+                cursor: pointer;
+            }
         }
     }
 }
@@ -52,17 +45,34 @@
 .sidebar-r-twitter {
 
     &__message {
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: 12px;
+        line-height: 14px;
+        margin: 20px 0 0 0;
+        padding: 0;
     }
 
     &__message-nickname {
+        color: #bababa;
+        display: inline;
+        &:hover{
+            text-decoration: underline solid black;
+            cursor: pointer;
+        }
     }
 
     &__message-description {
+        color: #464646;
+        margin: 0 0 5px 0;
+        padding: 0;
+        display: inline;
     }
 
     &__message-time {
+        color: #999999;
+        display: block;
+        margin: 7px 0 0 0;
+        padding: 0;
     }
 
-    &__follow {
-    }
 }
