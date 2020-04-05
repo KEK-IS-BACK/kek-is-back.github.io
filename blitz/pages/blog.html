@@ -10,18 +10,23 @@
 </head>
 
 <body>
-    <header class="page-header">
-        <div class="container flex">
-            <a href="../index.html" class="page-header__logo">Blitz</a>
-            <nav class="header-nav">
+    <header class="header">
+        <div class="container">
+            <div class="header__body flex">
+                <a href="../index.html" class="header__logo">Blitz</a>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="header-nav">
                 <ul class="header-nav-list flex">
                     <a class="header-nav-list__item" href="../index.html"><span>Homepage</span><li>Home</li></a>
                     <a class="header-nav-list__item" href="about.html"><span>Who are we?</span><li>About</li></a>
-                    <a class="header-nav-list__item" href=projects.html><span>My Portfolio</span><li>Projects</li></a>
-                    <a class="header-nav-list__item" href=#><span>Latest News</span><li>Blog</li></a>
+                    <a class="header-nav-list__item" href="projects.html"><span>My Portfolio</span><li>Projects</li></a>
+                    <a class="header-nav-list__item" href="blog.html"><span>Latest News</span><li>Blog</li></a>
                     <a class="header-nav-list__item" href="contact.html"><span>Get in touch</span><li>Contact</li></a>
                 </ul>
-            </nav>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -112,7 +117,7 @@
             
 
         </div>
-        <aside class="sidebar-r wrap-220">
+        <aside class="sidebar-r wrap-220 sidebar-r_indent">
             <div class="sidebar-r-about-blitz">
                 <h5 class="sidebar-r__title">ABOUT BLITZ</h5>               
                 <div class="border"></div>
@@ -157,6 +162,9 @@
         </div>
     </footer>
 
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

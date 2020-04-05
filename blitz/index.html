@@ -10,21 +10,27 @@
 </head>
 
 <body>
-    <header class="page-header">
-        <div class="container flex">
-            <a href=# class="page-header__logo">Blitz</a>
-            <nav class="header-nav">
+    <header class="header">
+        <div class="container">
+            <div class="header__body flex">
+                <a href=# class="header__logo">Blitz</a>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="header-nav">
                 <ul class="header-nav-list flex">
-                    <a class="header-nav-list__item" href=#><span>Homepage</span><li>Home</li></a>
+                    <a class="header-nav-list__item" href="#"><span>Homepage</span><li>Home</li></a>
                     <a class="header-nav-list__item" href="pages/about.html"><span>Who are we?</span><li>About</li></a>
                     <a class="header-nav-list__item" href="pages/projects.html"><span>My Portfolio</span><li>Projects</li></a>
                     <a class="header-nav-list__item" href="pages/blog.html"><span>Latest News</span><li>Blog</li></a>
                     <a class="header-nav-list__item" href="pages/contact.html"><span>Get in touch</span><li>Contact</li></a>
                 </ul>
-            </nav>
+                </nav>
+            </div>
         </div>
     </header>
-    <div class="page-slider">
+
+    <div class="page-slider page-slider_indent">
         <div class="container">
             <div class="main-slider">
                 <div class="main-slider__item"><img src="img/jpg/slider.jpg" alt=""></div>
@@ -39,9 +45,7 @@
                 </div>
                 <div class="page-slider-bottom-row__info">
                     <h4>JESUS TYPOGRAPHY WALLPAPER</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non diam et lacus pulvinar venenatis
-                        et vestibulum velit. Pellentesque interdum faucibus dui hendrerit ultrices. Aliquam erat volutpat.
-                        Duis commodo turpis id diam pulvinar hendrerit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non diam et lacus pulvinar venenatis et vestibulum velit. Pellentesque interdum faucibus dui hendrerit ultrices. Aliquam erat volutpat. Duis commodo turpis id diam pulvinar hendrerit.</p>
                 </div>
             </div>
         </div>
@@ -131,6 +135,7 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/slick.min.js"></script>
 </body>
 
