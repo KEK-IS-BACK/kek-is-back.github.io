@@ -7,3 +7,12 @@ $(document).ready(function(){
         $('.sidebar-r_mobile, .header__sidebar-r').toggleClass('active');
     })
 })
+
+$('.masonry').masonry({
+    // options
+    itemSelector: '.page-projects-content-block',
+    columnWidth: 210,
+    horizontalOrder: true,
+    fitWidth: true,
+    gutter: 15,
+  });
