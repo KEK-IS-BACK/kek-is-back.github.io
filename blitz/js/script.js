@@ -1,3 +1,11 @@
+let width = $('body').innerWidth()
+    if (width < 960) {
+        $('.sidebar-r').removeClass('sidebar-r').addClass('sidebar-r_mobile');
+    }
+    if(width > 960){
+        $('.sidebar-r_mobile').removeClass('sidebar-r_mobile').addClass('sidebar-r'); 
+    }
+
 $(window).resize(function () { 
     let width = $('body').innerWidth()
     if (width < 960) {
