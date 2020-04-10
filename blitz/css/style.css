@@ -476,8 +476,31 @@ body {
 }
 
 .main-slider .slick-arrow {
-  display: none;
+  position: absolute;
+  z-index: 2;
   font-size: 0;
+  width: 30px;
+  height: 50px;
+  background-image: url(../img/svg/slider_arrow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  top: 45%;
+  opacity: 0;
+  -webkit-transition: ease all 0.5s;
+  transition: ease all 0.5s;
+}
+
+.main-slider .slick-arrow.slick-prev {
+  left: 15px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.main-slider .slick-arrow.slick-next {
+  right: 15px;
 }
 
 .main-slider .slick-dots {
@@ -515,6 +538,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.main-slider:hover .slick-arrow {
+  opacity: 1;
 }
 
 .page-slider-bottom-row {
@@ -746,13 +773,61 @@ body {
 
 .page-projects-content-block {
   border: 1px solid #f9f9f9;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  width: 210px;
 }
 
 .page-projects-content-block__img {
+  display: block;
   margin: 0 0 16px 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  outline: none;
+  -webkit-transition: ease all 0.3s;
+  transition: ease all 0.3s;
+}
+
+.page-projects-content-block__img img {
+  width: 100%;
+}
+
+.page-projects-content-block__img::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 2;
+  -webkit-transition: ease all 0.3s;
+  transition: ease all 0.3s;
+  opacity: 0;
+}
+
+.page-projects-content-block__img::before {
+  content: "";
+  background-image: url(../img/svg/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+  background-color: rgba(118, 125, 120, 0.4);
+  position: absolute;
+  display: block;
+  border-radius: 5px;
+  width: 70px;
+  height: 70px;
+  z-index: 3;
+  top: 35%;
+  left: 35%;
+  opacity: 0;
+  -webkit-transition: ease all 0.3s;
+  transition: ease all 0.3s;
+}
+
+.page-projects-content-block__img:hover::after, .page-projects-content-block__img:hover::before {
+  opacity: 1;
 }
 
 .page-projects-content-block__info {
