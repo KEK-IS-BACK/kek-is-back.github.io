@@ -8,12 +8,5 @@ $(document).ready(function(){
     })
 })
 
-$('.masonry').masonry({
-    itemSelector: '.page-projects-content-block',
-    columnWidth: 210,
-    horizontalOrder: true,
-    fitWidth: true,
-    gutter: 15,
-});
 
 
