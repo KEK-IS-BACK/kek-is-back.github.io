@@ -39,30 +39,28 @@
 
 <body>
     <div class="page-header">
-        <div class="wrap box-header">
+        <header class="wrap box-header">
             <a href="" class="logo"></a>
-            <ul class="nav">
-                <li><a href="" class="nav-item">Home</a></li>
-                <li><a href="" class="nav-item">Features</a></li>
-                <li><a href="" class="nav-item">Video</a></li>
-                <li><a href="" class="nav-item">Screens</a></li>
-                <li><a href="" class="nav-item">Pricing</a></li>
-                <li><a href="" class="nav-item">Team</a></li>
-                <li><a href="" class="btn-free">free trail</a></li>
-            </ul>
-        </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="" >Home</a></li>
+                    <li class="nav-item"><a href="" >Features</a></li>
+                    <li class="nav-item"><a href="" >Video</a></li>
+                    <li class="nav-item"><a href="" >Screens</a></li>
+                    <li class="nav-item"><a href="" >Pricing</a></li>
+                    <li class="nav-item"><a href="" >Team</a></li>
+                </ul>
+            </nav>
+            <a href="" class="btn-free">free trail</a>
+        </header>
         <div class="wrap box-header-two">
-            <h1>Best Software Landingpage </h1>
+            <h1 class="page-header__title">Best Software Landingpage </h1>
             <div class="btn-group">
                 <a href="" class="btn-primary">get started now</a>
                 <a href="" class="btn-secondary">learn more</a>
             </div>
         </div>
         <div class="statistic-bg"></div>
-    </div>
-    <div class="wrap">
-        <iframe class="advard" width="560" height="315" src="https://www.youtube.com/embed/oWf6CJsBs9Q" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <div class="page-company">
@@ -73,6 +71,7 @@
             <li class="company-item company-four"><span></span></li>
         </ul>
     </div>
+
     <div class="page-grid">
         <div class="grid m-grid">
             <h2 class="grid-title title-40"><span>Features</span>Best Features Ever Seen</h2>
@@ -130,6 +129,7 @@
             </div>
         </div>
     </div>
+
     <div class="page-subscribe">
         <div class="wrap box-subscribe">
             <div class="text-subscribe">
@@ -144,9 +144,11 @@
             <img class="robot" src="img/robot.png" alt="Robot">
         </div>
     </div>
+
     <div class="page-software">
+
         <div class="wrap page-software-box">
-            <div class="computer_bg"></div>
+            <div class="computer__bg"></div>
             <div class="page-software-list">
                 <div class="settings-icon"></div>
                 <h2 class="title-50">Grab Your Software With Amazing Features</h2>
@@ -217,9 +219,10 @@
             </div>
         </div>
     </div>
+
     <div class="page-stat">
         <div class="wrap">
-            <div>
+            <div class="page-stat__title">
                 <h2 class="title-50"><span>Fun Facts</span>Some Fun Facts About Dashboard</h2>
             </div>
             <ul class="list-stat">
@@ -258,7 +261,7 @@
 
     <div class="page-analytics">
         <div class="wrap page-analytics-box">
-            <img src="img/statistic_block8.png" alt="">
+            <img src="img/statistic_block8.png" alt="" class="page-analytics__img">
             <div class="page-analytics-content">
                 <div class="settings-icon"></div>
                 <h2 class="title-50">Limpon Is Suitable For Anytype LandingPage</h2>
@@ -269,7 +272,9 @@
                     aliquip
                     ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
                 </p>
-                <a href="" class="btn-primary">get started now</a>
+                <div class="page-analytics__btn-wrap">
+                    <a href="" class="btn-primary page-analytics__btn">get started now</a>
+                </div>
             </div>
         </div>
     </div>
@@ -288,13 +293,13 @@
                 </p>
                 <a href="" class="btn-primary">learn more</a>
             </div>
-            <img src="img/statistic_block9.png" alt="">
+            <img src="img/statistic_block9.png" alt="" class="page-statistics__img">
         </div>
     </div>
 
     <div class="page-screen">
         <h2 class="title-40"><span>screen preview</span>Screenshot With Details</h2>
-        <img src="img/screen.png" alt="Screen">
+        <img src="img/screen.png" alt="Screen" class="page-screen__img">
     </div>
 
     <div class="page-clients">
@@ -477,8 +482,7 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
             $(".btn-ricardo").click(function () {
@@ -496,25 +500,6 @@
         });
     </script>
 
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function (m, e, t, r, i, k, a) {
-            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
-            m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-        })
-            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-        ym(56840791, "init", {
-            clickmap: true,
-            trackLinks: true,
-            accurateTrackBounce: true,
-            webvisor: true
-        });
-    </script>
-    <noscript>
-        <div><img src="https://mc.yandex.ru/watch/56840791" style="position:absolute; left:-9999px;" alt="" /></div>
-    </noscript>
-    <!-- /Yandex.Metrika counter -->
 </body>
 
 </html>
