@@ -5,10 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Bukee</title>
-    <meta name="theme-color" content="#fff">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" href="../img/favicons/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/fb003d9f8f.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Slab:100,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -16,21 +13,26 @@
 </head>
 
 <body>
-    <div class="page-main">
-        <header>
-            <div class="header">
+
+    <div class="page-main" id='main-page'>
+        <header class="header">
+            <div class="header-body">
                 <a href="#" class="header__logo"></a>
-                <ul class="header-list">
-                    <li class="header-list__item active"><a href="">Home</a></li>
-                    <li class="header-list__item"><a href="">About</a></li>
-                    <li class="header-list__item"><a href="">Contents</a></li>
-                    <li class="header-list__item"><a href="">Books</a></li>
-                    <li class="header-list__item"><a href="">Education</a></li>
-                    <li class="header-list__item"><a href="">Skills</a></li>
-                    <li class="header-list__item"><a href="">Portfolio</a></li>
-                    <li class="header-list__item"><a href="">Clients</a></li>
-                    <li class="header-list__item"><a href="">Contact</a></li>
-                </ul>
+                <div class="menu-burger ">
+                    <span></span>
+                </div>
+                <nav class="header-nav"> 
+                    <ul class="header-nav-list">
+                        <li class="header-nav-list__item active"><a href="#main-page">Home</a></li>
+                        <li class="header-nav-list__item"><a href="#about">About</a></li>
+                        <li class="header-nav-list__item"><a href="#contents">Contents</a></li>
+                        <li class="header-nav-list__item"><a href="#books">Books</a></li>
+                        <li class="header-nav-list__item"><a href="#clients">Clients</a></li>
+                        <li class="header-nav-list__item"><a href="#education">Education</a></li>
+                        <li class="header-nav-list__item"><a href="#portfolio">Portfolio</a></li>
+                        <li class="header-nav-list__item"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
         <div class="wrap">
@@ -41,68 +43,53 @@
                 </div>
                 <div class="block-text">
                     <p class="block-text__name">- By Emma Anderson</p>
-                    <h1 class="block-text__title">BUKEE: THE BOOK<span>A room without books is like a body without a
-                            soul</span></h1>
-                    <p class="block-text__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. </p>
-                    <p class="block-text__description">Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum. Sed ut</p>
+                    <h1 class="block-text__title">BUKEE: THE BOOK<span>A room without books is like a body without a soul</span></h1>
+                    <p class="block-text__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="block-text__description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut</p>
                     <a href="#" class="block-text__btn">Buy this book - $15.00 </a>
                     <small class="block-text__small">* Some conditions may applicable</small>
                 </div>
             </div>
         </div>
     </div>
-    <div class="page">
+    <div class="page" id="about">
         <div class="wrap">
             <div class="block-author">
                 <div class="block-text">
                     <p class="block-text__name">- Book Author</p>
-                    <h1 class="block-text__title">Emma Anderson<span>A room without books is like a body
-                            without
-                            a soul</span></h1>
-                    <p class="block-text__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                        do
-                        eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p class="block-text__description"> Duis aute irure dolor in reprehenderit in voluptate velit
-                        esse
-                        cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum. Sed ut </p>
-                    <a href="" class="block-text__btn">Read full biography </a>
+                    <h1 class="block-text__title">Emma Anderson<span>A room without books is like a body without a soul</span></h1>
+                    <p class="block-text__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="block-text__description"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut</p>
+                    <a href="" class="block-text__btn">Read full biography</a>
                 </div>
                 <div class="block-author__img">
                     <img src="../img/portrait_1.jpg" alt="">
                 </div>
             </div>
             <div class="block-counter">
-                <p class="block-counter__item">12<span>Total published books</span></p>
-                <p class="block-counter__item">5<span>Best selling books</span></p>
-                <p class="block-counter__item">15.000<span>Happy peoples</span></p>
+                <div class="block-counter__item">
+                    <div class="block-counter__number" >12</div>
+                    <span class="block-counter__text">Total published books</span>
+                </div>
+                <div class="block-counter__item">
+                    <div class="block-counter__number" >5</div>
+                    <span class="block-counter__text">Best selling books</span>
+                </div>
+                <div class="block-counter__item">
+                    <div class="block-counter__number" >15000</div>
+                    <span class="block-counter__text">Happy peoples</span>
+                </div>
             </div>
         </div>
     </div>
-    <div class="page page__gray">
+    <div class="page page__gray" id="contents">
         <div class="wrap">
             <h1 class="page-title">Book Contents</h1>
             <p class="page-subtitle">Let’s see what we have covered in the book</p>
             <div class="block-about">
                 <div class="block-about-text">
                     <h3 class="block-about-text__title">About the book</h3>
-                    <p class="block-about-text__description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna ali qua. Ut enim ad minim veniam, quis nostrud exercitation ull amco laboris
-                        nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                        esse
-                        cillu m dolore eu fugiat nulla pariatur.</p>
+                    <p class="block-about-text__description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim ad minim veniam, quis nostrud exercitation ull amco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillu m dolore eu fugiat nulla pariatur.</p>
                     <div class="block-about-text__social">
                         <p>Featured in:</p>
                         <ul class="block-about-text__social-list">
@@ -134,7 +121,7 @@
             </div>
         </div>
     </div>
-    <div class="page">
+    <div class="page" id="books">
         <div class="wrap">
             <div class="page-books">
                 <h1 class="page-title">Other Books</h1>
@@ -149,8 +136,7 @@
                         </div>
                         <div class="block-books-item-text">
                             <h2 class="block-books-item-text__title">Inception</h2>
-                            <p class="block-books-item-text__description">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                            <p class="block-books-item-text__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                             <a href="" class="block-books-item-text__read-more">Read more</a>
                         </div>
                     </div>
@@ -163,8 +149,7 @@
                         </div>
                         <div class="block-books-item-text">
                             <h2 class="block-books-item-text__title">Fight Club</h2>
-                            <p class="block-books-item-text__description">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                            <p class="block-books-item-text__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                             <a href="" class="block-books-item-text__read-more">Read more</a>
                         </div>
                     </div>
@@ -177,8 +162,7 @@
                         </div>
                         <div class="block-books-item-text">
                             <h2 class="block-books-item-text__title">Daredevils</h2>
-                            <p class="block-books-item-text__description">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                            <p class="block-books-item-text__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                             <a href="" class="block-books-item-text__read-more">Read more</a>
                         </div>
                     </div>
@@ -187,7 +171,7 @@
             </div>
         </div>
     </div>
-    <div class="page page-carousel">
+    <div class="page page-carousel" id="clients">
         <div class="wrap">
             <div class="carousel">
                 <div>
@@ -199,10 +183,7 @@
                     </div>
                     <h2 class="carousel__name">Kate Dennings</h2>
                     <p class="carousel__expert">Calligraphy Expert</p>
-                    <p class="carousel__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                        maecenas accumsan lacus vel facilisis.</p>
+                    <p class="carousel__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
                 </div>
                 <div>
                     <div class="carousel-ava">
@@ -213,10 +194,7 @@
                     </div>
                     <h2 class="carousel__name">Kate Dennings</h2>
                     <p class="carousel__expert">Calligraphy Expert</p>
-                    <p class="carousel__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                        maecenas accumsan lacus vel facilisis.</p>
+                    <p class="carousel__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
                 </div>
                 <div>
                     <div class="carousel-ava">
@@ -227,45 +205,34 @@
                     </div>
                     <h2 class="carousel__name">Kate Dennings</h2>
                     <p class="carousel__expert">Calligraphy Expert</p>
-                    <p class="carousel__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                        maecenas accumsan lacus vel facilisis.</p>
+                    <p class="carousel__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
                 </div>
             </div>
         </div>
         <svg class="carousel-bg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 849"><path fill-rule="evenodd" clip-rule="evenodd" fill="#44444F" d="M-.7 0l962.2 61 958.6-61v789l-958.6 60L-.7 789V0z"/></svg>
     </div>
-    <div class="page">
+    <div class="page" >
         <div class="wrap">
-            <div class="page-events">
+            <div class="page-events" >
                 <div class="block-shower__img">
                     <img src="../img/portrait_2.jpg" alt="">
                 </div>
                 <div class="block-text">
-                    <p class="block-text__name">- Emma Anderson</p>
+                    <p class="block-text__name" id="education">- Emma Anderson</p>
                     <h1 class="block-text__title">Upcoming Events
-                        <span>
-                            Some upcoming events you might be interested in
-                        </span>
+                        <span>Some upcoming events you might be interested in</span>
                     </h1>
                     <div class="block-text-item">
                         <span class="block-text-item__date">November 21, 2018</span>
                         <h4 class="block-text-item__place">Book signing - San francisco, CA</h4>
-                        <p class="block-text-item__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo
-                            viverra maecenas accumsan lacus vel facilisis.
+                        <p class="block-text-item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                         </p>
                         <a href="" class="block-text-item__btn">Register</a>
                     </div>
                     <div class="block-text-item">
                         <span class="block-text-item__date">November 21, 2018</span>
                         <h4 class="block-text-item__place">Book reading - Los Angeles, CA</h4>
-                        <p class="block-text-item__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo
-                            viverra maecenas accumsan lacus vel facilisis.
+                        <p class="block-text-item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                         </p>
                         <a href="" class="block-text-item__btn">Register</a>
                     </div>
@@ -273,7 +240,7 @@
             </div>
         </div>
     </div>
-    <div class="page-blog page__gray">
+    <div class="page-blog page__gray" id="portfolio">
         <div class="wrap">
             <h1 class="page-title">Latest from Blog</h1>
             <p class="page-subtitle">Some of the latest posts from my personal blog</p>
@@ -284,9 +251,7 @@
                     <div class="block-blog-info">
                         <p>By </p><a href="">Emma Anderson</a><span>-</span><a href="">June 20<span>,</span> 2018</a>
                     </div>
-                    <p class="block-blog__desc">Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius
-                        mod tempor incididunt ut
-                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo</p>
+                    <p class="block-blog__desc">Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo</p>
                 </div>
                 <div class="block-blog-item">
                     <div class="block-blog-img"><img src="../img/blog_photo_2.jpg" alt=""></div>
@@ -294,9 +259,7 @@
                     <div class="block-blog-info">
                         <p>By </p><a href="">Emma Anderson</a><span>-</span><a href="">June 25<span>,</span> 2018</a>
                     </div>
-                    <p class="block-blog__desc">Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius
-                        mod tempor incididunt ut
-                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo</p>
+                    <p class="block-blog__desc">Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo</p>
                 </div>
                 <div class="block-blog-item">
                     <div class="block-blog-img"><img src="../img/blog_photo_3.jpg" alt=""></div>
@@ -304,22 +267,18 @@
                     <div class="block-blog-info">
                         <p>By </p><a href="">Emma Anderson</a><span>-</span><a href="">August 22<span>,</span> 2018</a>
                     </div>
-                    <p class="block-blog__desc">Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius
-                        mod tempor incididunt ut
-                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo</p>
+                    <p class="block-blog__desc">Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo</p>
                 </div>
             </div>
             <a href="" class="page__btn">Read more in the blog</a>
         </div>
     </div>
-    <div class="page">
+    <div class="page" id="contact">
         <div class="wrap">
             <div class="block-letter">
                 <div class="block-letter-item">
                     <h1 class="block-letter__title">Join Newsletter</h1>
-                    <p class="block-letter__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices
-                        gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                    <p class="block-letter__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
                 </div>
                 <div class="block-letter-item">
                     <input class="block-letter__input" type="text" placeholder="Enter your email">
@@ -333,9 +292,7 @@
             <div class="block-footer">
                 <div class="block-footer-item1">
                     <a class="block-footer__logo"></a>
-                    <p class="block-footer__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.</p>
+                    <p class="block-footer__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <p class="block-footer__police">© 2018 Bukee Private Limited.</p>
                 </div>
                 <div class="block-footer-item2">
@@ -368,10 +325,9 @@
         </div>
     </div>
 
-    <script src="../js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+    <script src="js/index.js"></script>
     <script>
         $(document).ready(function () {
             $('.carousel').slick({
